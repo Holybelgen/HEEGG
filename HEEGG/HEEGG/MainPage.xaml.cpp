@@ -26,8 +26,3 @@ MainPage::MainPage()
 	InitializeComponent();
 }
 
-
-void HEEGG::MainPage::Button_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
-{
-	greetingOutput->Text = "Hello, "
-}

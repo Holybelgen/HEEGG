@@ -8,14 +8,45 @@
     mc:Ignorable="d">
     
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <StackPanel x:Name="contentPanel" Margin="414,252,448,283">
-            <TextBlock HorizontalAlignment="Left" Text="Hello World" FontSize="36"/>
-            <TextBlock Text="What's your name?"/>
-            <StackPanel x:Name="inputPanel" Orientation="Horizontal" Margin="0,20,0,20">
-                <TextBox x:Name="nameInput" Width="300" HorizontalAlignment="Left" Text=""/>
-                <Button x:Name="inputButton" Content="Say 'Hello'" Click="Button_Click"/>
-            </StackPanel>
-            <TextBlock x:Name="greetingOutput"/>
+        <ListView HorizontalAlignment="Left" Width="300">
+            <ListViewItem Content="HELGI GOES APESHIT.wav"></ListViewItem>
+            <ListViewItem Content="Diarhea of the mouth.wav"></ListViewItem>
+            <ListViewItem Content="Jonsextape.wav"></ListViewItem>
+            <ListViewItem Content="Hvaðertuaðgerageiri.wav"></ListViewItem>
+            <ListViewItem Content="Pabbi hans hauks.wav"></ListViewItem>
+            <ListViewItem Content="Raggidoinghisthong.wav"></ListViewItem>
+            <ListViewItem Content="HELGI GOES APESHIT 2.wav"></ListViewItem>
+            <ListViewItem Content="rawr.wav"></ListViewItem>
+        </ListView>
+        <Grid Margin="300,0,0,0">
+        <StackPanel x:Name="contentPanel" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel x:Name="recordPanel" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <TextBlock HorizontalAlignment="Left" Text="Record" FontSize="36"/>
+                    <TextBlock HorizontalAlignment="Left" Text="Record device" FontSize="18"/>
+                    <ComboBox Width="300" HorizontalAlignment="Left">
+                        <ComboBoxItem HorizontalAlignment="Left" Width="100" Content="MIC OF DOOM"></ComboBoxItem>
+                        <ComboBoxItem HorizontalAlignment="Left" Width="100" Content="MIC OF SEXY"></ComboBoxItem>
+                    </ComboBox>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                        <Button Content="Record"></Button>
+                        <Button Content="Stop"></Button>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel x:Name="playPanel" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                <TextBlock HorizontalAlignment="Left" Text="Playback" FontSize="36"/>
+                <TextBlock HorizontalAlignment="Left" Text="Playback device" FontSize="18"/>
+                    <ComboBox Width="300">
+                        <ComboBoxItem HorizontalAlignment="Left" Width="300" Content="SPEAKER OF DOOM"></ComboBoxItem>
+                        <ComboBoxItem  HorizontalAlignment="Left" Width="300" Content="HEADPHONES OF SEXY"></ComboBoxItem>
+                    </ComboBox>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                        <Button Content="Play"></Button>
+                        <Button Content="Stop"></Button>
+                    </StackPanel>
+                </StackPanel>
+           
         </StackPanel>
+        </Grid>
     </Grid>
 </Page>
